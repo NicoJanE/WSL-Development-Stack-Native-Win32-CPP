@@ -3,7 +3,7 @@
 # What
 A WSL Template Stack Container for **native** Win32 GUI C++ Projects.
 
-For more information, visit the [main documentation page](https://nicojane.github.io/APP-X11-Forward-win32-CPP-Development-Template-Stack/index.html). You can find other Docker Template Stack (DTS) containers  [here.](https://nicojane.github.io/Docker-Template-Stacks-Home/)
+For more information, visit the [WSL Home page](https://nicojane.github.io/WSL-Template-Stacks-Home/). We also have a  Docker Template Stack (DTS) Site [here.](https://nicojane.github.io/Docker-Template-Stacks-Home/)
 
 <sub> &nbsp;&nbsp;&nbsp;&nbsp; *Is this a local repository project? If so, use this local link to access the [main page](./index) file. <sub>
 
