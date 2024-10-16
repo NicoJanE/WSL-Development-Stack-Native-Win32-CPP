@@ -31,7 +31,7 @@ home_site_name:
     - WSL
 home_site_url: 
     - https://nicojane.github.io/Docker-Template-Stacks-Home
-      https://nicojane.github.io/WSL-Template-Stacks-Home
+    - https://nicojane.github.io/WSL-Template-Stacks-Home
 
 # EXAMPLE                                
 #<details>  
