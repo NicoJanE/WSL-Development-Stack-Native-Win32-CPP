@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "/mnt/c/Program Files/Microsoft Visual Studio/2022/Professional/VC/Tools/MSVC/14.41.34120/include",
+                "/mnt/c/Program Files (x86)/Windows Kits/10/Include/10.0.22621.0/um",
+                "/mnt/c/Program Files (x86)/Windows Kits/10/Include/10.0.22621.0/shared",
+                "/mnt/c/Program Files (x86)/Windows Kits/10/Include/10.0.22621.0/winrt",
+                "${workspaceFolder}/**"
+            ],
+            "defines": ["_DEBUG","UNICODE","_UNICODE"],
+            "compilerPath": "/mnt/c/Program Files/Microsoft Visual Studio/2022/Professional/VC/Tools/MSVC/14.41.34120/bin/Hostx64/x64/cl.exe",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "windows-msvc-x64",
+            "configurationProvider": "ms-vscode.makefile-tools"
+        }
+    ],
+    "version": 4
+}

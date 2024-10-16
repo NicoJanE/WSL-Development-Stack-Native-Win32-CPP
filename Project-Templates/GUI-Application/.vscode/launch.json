@@ -1,0 +1,19 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+      {
+          "name": "Debug (Release Build)",
+          "type": "cppdbg",  // Use cppvsdbg for MSVC or cppdbg for GDB cppdbg SHOULD USE THIS ONE:cppvsdbg
+          "request": "launch",
+          "program": "${workspaceFolder}/_build64/bin/Debug/outapp.exe",  // Adjust this to your build output
+          "args": [],
+          "stopAtEntry": false,
+          "cwd": "${workspaceFolder}",
+          "environment": [],
+          "externalConsole": false,
+          "MIMode": "gdb",
+          "preLaunchTask": "AFX: Build Debug",  // Your CMake + batch build task
+          "internalConsoleOptions": "openOnSessionStart",
+      }
+  ]
+}

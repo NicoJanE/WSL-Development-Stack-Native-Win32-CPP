@@ -1,0 +1,157 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+            // {        
+            //            "label": "AFX: Build Release",
+            //            "type": "process",
+            //            "command": "powershell.exe",
+            //            "args": [
+            //                "-Command",
+            //                " 'C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\Common7\\Tools\\VsDevCmd.bat'; cmake --build build --config Release"
+            //                "& 'C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\Common7\\Tools\\VsDevCmd.bat'; Start-Process cmake -ArgumentList '--build build --config Release' -Wait"
+            //                  "& { . 'C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\Common7\\Tools\\VsDevCmd.bat'; Invoke-Expression 'cmake --build build --config Release' }"
+            //            ],
+            //            "args": [
+            //            "/c",
+            //            "echo Starting build... && call \"C:/Program Files/Microsoft Visual Studio/2022/Professional/Common7/Tools/VsDevCmd.bat\" && cmake --build build --config Release"
+            //           ],
+            //}
+            {
+                "label": "AFX: Build Release",
+                "type": "shell",
+                "command": "cmd.exe",
+                "args": [
+                    "/c",
+                    "_buildtask.bat",
+                    "build-release"
+                ],
+                "group": {
+                    "kind": "build",
+                    "isDefault": true
+                },
+                "problemMatcher": "$msCompile",
+                "options": {
+                    "showOutput": "always"
+                }
+            },
+            {
+                "label": "AFX: Build Debug",
+                "type": "shell",
+                "command": "cmd.exe",
+                "args": [
+                    "/c",
+                    "_buildtask.bat",
+                    "build-debug"
+                ],
+                "group": {
+                    "kind": "build",
+                    "isDefault": true
+                },
+                "problemMatcher": "$msCompile",
+                "options": {
+                    "showOutput": "always"
+                }
+            },
+            {
+                "label": "AFX: Clean all (regenerate!)",
+                "type": "shell",
+                "command": "cmd.exe",
+                "args": [
+                    "/c",
+                    "_buildtask.bat",
+                    "clean-all"
+                ],
+                "group": {
+                    "kind": "build",
+                    "isDefault": true
+                },
+                "problemMatcher": "$msCompile",
+                "options": {
+                    "showOutput": "always"
+                }
+            },
+            {
+                "label": "AFX: Clean Debug (bin, obj)",
+                "type": "shell",
+                "command": "cmd.exe",
+                "args": [
+                    "/c",
+                    "_buildtask.bat",
+                    "clean-debug"
+                ],
+                "group": {
+                    "kind": "build",
+                    "isDefault": true
+                },
+                "problemMatcher": "$msCompile",
+                "options": {
+                    "showOutput": "always"
+                }
+            },            
+            {
+                "label": "AFX: Clean Release (bin, obj)",
+                "type": "shell",
+                "command": "cmd.exe",
+                "args": [
+                    "/c",
+                    "_buildtask.bat",
+                    "clean-Release"
+                ],
+                "group": {
+                    "kind": "build",
+                    "isDefault": true
+                },
+                "problemMatcher": "$msCompile",
+                "options": {
+                    "showOutput": "always"
+                }
+            },            
+            {
+                "label": "AFX: Configure Make 64 bits (CMake)",
+                "type": "shell",
+                "command": "cmd.exe",
+                "args": [
+                    "/c",
+                    "_buildtask.bat",
+                    "config-make64"
+                ],
+                "group": {
+                    "kind": "build",
+                    "isDefault": true
+                },
+                "problemMatcher": "$msCompile",
+                "options": {
+                    "showOutput": "always"
+                }
+            },
+            {
+                "label": "AFX: Run Release",
+                "type": "shell",
+                "command": "cmd.exe",
+                "args": [
+                    "/c",
+                    "_buildtask.bat",
+                    "run-release"
+                ],                            
+                "options": {
+                    "showOutput": "always"
+                }
+            },
+            {
+                "label": "AFX: Run Debug",
+                "type": "shell",
+                "command": "cmd.exe",
+                "args": [
+                    "/c",
+                    "_buildtask.bat",
+                    "run-debug"
+                ],                            
+                "options": {
+                    "showOutput": "always"
+                }
+            },
+
+            
+    
+    ]
+}
