@@ -129,7 +129,7 @@ Please check these files for the correct SDK paths and compiler. They should poi
 In the menu **'Terminal -> Run Tasks...'**, you can find the build tasks for our project, which are defined in the settings file (see the side note above). The following tasks are defined for our project:
 
 - AFX Configure Make 64 bits(CMake)<br>
-<small>Call this first to created the make file for the 64 bits application. Creates folder _build64</small> <br>  
+<small>**Call this first!** To created the make file for the 64 bits application. Creates folder _build64</small> <br>  
 - AFX Clean all <br>
 <small>Remove the _build64 folder, you need the regenerate the makefiles again(see above)</small> <br>    
 - AFX Build Debug <br>

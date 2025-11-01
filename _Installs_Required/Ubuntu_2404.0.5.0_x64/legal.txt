@@ -1,0 +1,14 @@
+Licensing & Redistribution Terms MS WSL
+
+The "Microsoft redistribution license"
+- The license does not grant redistribution rights to third parties.
+
+
+
+What else is allowed (as an alternative, not supported)
+
+You can legally redistribute a derived image if:
+  - You start from the official open-source Ubuntu base (e.g., from Docker Hub or Canonical’s cloud images), not Microsoft’s .appx.
+  - You build your own WSL-compatible root filesystem (e.g., using debootstrap or docker export).
+  - You clearly document how it’s derived and maintain compliance with Ubuntu’s and Canonical’s open-source licenses (mainly GPL/LGPL/MIT).
+Then, you can say: “This is a custom Ubuntu 24.04 WSL image built from Canonical’s public packages.”

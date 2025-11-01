@@ -1,0 +1,1 @@
+For the WSL image, this is the default folder location

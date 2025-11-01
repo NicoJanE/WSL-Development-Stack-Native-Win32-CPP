@@ -1,3 +1,6 @@
 **/UnUsed/
 **/_#Installs_Required/
 .njerepo
+
+# EXCEPTION: allow this folder:
+!/_Installs_Required/

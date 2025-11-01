@@ -14,7 +14,7 @@ param (
     [string]$WSL_target_dir     = "./Images/",
     [string]$project_name       = "Tmplcpp",
     [string]$CPP_project_dir    = "/mnt/d/WSL/WSL-Data/Projects",
-    [string]$WSL_distr_source   = "./_#Installs_Required/Ubuntu_2404.0.5.0_x64/install.tar.gz"
+    [string]$WSL_distr_source   = "./_Installs_Required\Ubuntu_2404.0.5.0_x64/install.tar.gz"
 )
 
 # Global variables
