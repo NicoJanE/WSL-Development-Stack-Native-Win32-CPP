@@ -20,7 +20,7 @@ If you have previously installed this container, you can use the quick setup ste
 - Start VSC  
   <pre class="nje-cmd-one-line-sm-ident1">WSL: Connect to WSL using distro in new Window…  </pre>
 
-- Open folder in Container  </small></pre>
+- Open project folder in VS Code  Container
 
 <sub> This file is part of:  **WSL Native Win32 C++ Development-Template -Stack**
 Copyright (c) 2025 Nico Jan Eelhart. This source code is licensed under the MIT License found in the  'LICENSE.md' file in the root directory of this source tree.
