@@ -4,7 +4,7 @@ RefPages:
  - howto_create_a_dev_container   
 --- 
 
-<br>
+<div class="nje-br2"> </div>
 
 # Win32 Native C++ Template <span style="color: #409EFF; font-size: 0.6em; font-style: italic;"> -  WSL Setup & Usage Guide</span>
 
