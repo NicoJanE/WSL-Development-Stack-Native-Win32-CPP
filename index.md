@@ -47,14 +47,14 @@ If you have previously installed this container, you can use the quick setup ste
 
 <div class="nje-expect-multi-lines-indent2">
 The results:
-- A new WSL environment has been created with he name: **MyWSL** (execute: <span class="nje-cmd-inline-sm"> wsl -l -v </span>)
+- A new WSL environment has been created with the name: **MyWSL** (execute: <span class="nje-cmd-inline-sm"> wsl -l -v </span>)
 - The WSL is stored in the project folder under ***./WSL-target-dir***
-- In the WSL the Template C++ project is available under the name: ***project-name**
+- In the WSL, the template C++ project is available under the name: ***project-name**
 </div>
 <div class="nje-br2"> </div>
 
 1. Start VSC and use the Visual Code Command below: (***CTRL-SHIFT-P***) to start the WSL in VS Code,
-   <pre class="nje-cmd-one-line-sm-indent1">WSL: Connect to WSL using distribution in new Window…  </pre>
+   <pre class="nje-cmd-one-line-sm-indent1">WSL: Connect to WSL using distribution in new window…  </pre>
 
 1. You can then Open project folder in VS Code Container (File -> Open Folder) and start coding.
 
