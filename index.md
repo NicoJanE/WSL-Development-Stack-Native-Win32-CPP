@@ -3,27 +3,63 @@ layout: default_c
 RefPages:
  - howto_create_a_dev_container
 --- 
+<div class="nje-br3"> </div>
 
 # Win32 Native C++ Template
 
 ## ℹ️ Introduction
 
-This repository provides a WSL Template Stack Container for developing native Win32 GUI applications in C++.
-
-If you have previously installed this container, you can use the quick setup steps below. Otherwise please first read the [full documentation](https://nicojane.github.io/WSL-Development-Stack-Native-Win32-CPP/Howtos/howto_create_a_dev_container.html)
+This WSL Linux (Ubuntu 24.04) Native win32 C++ distribution is designed for the development of Win32 C++ GUI applications, via the WSL container while using the host compiler and SDK. It also setup a Template project which can be instantiated with cookie cutter
 
 ### Quick setup
 
-- Make sure you have an installation file for the WSL container
-  <pre class="nje-cmd-one-line-sm-ident1"> ./CreateWSL.ps1 MyWSL ./WSL-target-dir project-name /mnt/d/project-location ./folder-to-your-installation/install.tar.g  </pre>
+If you have previously installed this container, you can use the quick setup steps below to get running in a few steps. Otherwise please first read the [**full documentation**](https://nicojane.github.io/WSL-Development-Stack-Native-Win32-CPP/Howtos/howto_create_a_dev_container.html)
 
-- Start VSC  
-  <pre class="nje-cmd-one-line-sm-ident1">WSL: Connect to WSL using distro in new Window…  </pre>
+1. Make sure you have an installation file for the WSL container(**install.tar.gz**) see Background note below.
 
-- Open project folder in VS Code  Container
+<details class="nje-back-box">
+  <a name="manual-wsl"></a>
+  <summary>Get the WSL Installation file🔧
+  </summary>
 
-<sub> This file is part of:  **WSL Native Win32 C++ Development-Template -Stack**
-Copyright (c) 2025 Nico Jan Eelhart. This source code is licensed under the MIT License found in the  'LICENSE.md' file in the root directory of this source tree.
+## Download the WSL packages
+
+- From [here](https://learn.microsoft.com/en-us/windows/wsl/install-manual).
+- Scroll to the *"Downloading distributions" section.
+- Download the Ubuntu 24.04 `.AppxBundle` (this guide assumes this version).
+- Unpack the package, like, assuming you downloaded `Ubuntu2404-240425.AppxBundle`:
+
+## Get the right **WSL Import** file
+
+- Rename `Ubuntu2404-240425.AppxBundle` to `Ubuntu2404-240425.zip`
+- Unpack it using 7zip or similar
+- Find  `Ubuntu_2404.0.5.0_x64.appx` 
+  - Rename it to: `Ubuntu_2404.0.5.0_x64.zip` unpack it.
+  - Unpack it.  
+**Result** you'll get the file: `install.tar.gz` this is what you’ll use in the next step,
+
+<p align="center" style="padding:20px;">─── ✦ ───</p>
+</details>
+<div class="nje-br3"> </div>
+
+1. Then run the script **CreateWSL.ps1** to generate the WSL environment with the required packages:
+   <pre class="nje-cmd-one-line-sm-indent1">./CreateWSL.ps1 MyWSL ./WSL-target-dir project-name /mnt/d/project-location ./folder-to-your-installation/install.tar.gz  </pre>
+
+<div class="nje-expect-multi-lines-indent2">
+The results:
+- A new WSL environment has been created with he name: **MyWSL** (execute: <span class="nje-cmd-inline-sm"> wsl -l -v </span>)
+- The WSL is stored in the project folder under ***./WSL-target-dir***
+- In the WSL the Template C++ project is available under the name: ***project-name**
+</div>
+<div class="nje-br2"> </div>
+
+1. Start VSC and use the Visual Code Command below: (***CTRL-SHIFT-P***) to start the WSL in VS Code,
+   <pre class="nje-cmd-one-line-sm-indent1">WSL: Connect to WSL using distribution in new Window…  </pre>
+
+1. You can then Open project folder in VS Code Container (File -> Open Folder) and start coding.
+
+<sub> <i>This file is part of:  **WSL Native Win32 C++ Development-Template -Stack**
+Copyright (c) 2025 Nico Jan Eelhart. This source code is licensed under the MIT License found in the  'LICENSE.md' file in the root directory of this source tree.</i>
 </sub>
 
 <br>
