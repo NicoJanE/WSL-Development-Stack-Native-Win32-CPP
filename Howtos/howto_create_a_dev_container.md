@@ -125,7 +125,7 @@ wsl --set-default distribution_name #  Set default when running command; wsl
 ### Open the Application Environment in VS Code (@host)
 
 - Press CTRL-SHIFT-P or F1 and start typing  **WSL: Connect to WSL using distro in new Window...**
-- Select you WSL container
+- Select your WSL container
 This opens a new VSC Window with the container.
 
 ### Open Folder and building your app
@@ -153,15 +153,15 @@ Please check these files for the correct SDK paths and compiler. They should poi
 In the menu **'Terminal -> Run Tasks...'**, you can find the build tasks for our project, which are defined in the settings file (see the side note above). The following tasks are defined for our project:
 
 - AFX Configure Make 64 bits(CMake)<br>
-<small>**Call this first!** To created the make file for the 64 bits application. Creates folder _build64</small> <br>  
+<small>**Call this first!** To create the makefiles for the 64-bits application. Creates the folder: '_build64'</small> <br>  
 - AFX Clean all <br>
-<small>Remove the _build64 folder, you need the regenerate the makefiles again(see above)</small> <br>
+<small>Remove the _build64 folder, you need to regenerate the makefiles again(see above)</small> <br>
 - AFX Build Debug <br>
 <small>Creates _build64/bin/debug/outapp.exe</small> <br>
 - AFX Build Release <br>
 <small>Creates _build64/bin/release/outapp.exe</small> <br>
 - AFX Clean debug<br>
-<small>removes bin and obj files of debug</small> <br>
+<small>removes bin and obj files for debug</small> <br>
 - AFX Clean release<br>
 <small>removes bin and obj files of release</small> <br>
 - AFX Run Debug<br>
