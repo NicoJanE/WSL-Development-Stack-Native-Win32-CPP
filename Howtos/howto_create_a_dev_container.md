@@ -10,13 +10,13 @@ RefPages:
 
 ## ℹ️ Introduction
 
-This WSL Linux (Ubuntu 24.04) Native win32 C++ distribution is designed for the development of Win32 C++ GUI applications, via the WSL container while using the host compiler and SDK. It also setup a Template project which can be instantiated with cookie cutter
+This WSL Linux (Ubuntu 24.04) native Win32 C++ distribution is designed for developing Win32 C++ GUI applications via the WSL container while using the host compiler and SDK. It also sets up a template project which can be instantiated with Cookiecutter
 
 ### 🎯 Architecture of the Container
 
 A setup script is used to create the WSL distribution inside a container. This WSL container includes the Linux distribution, a **C++ template project**, and all specialized Visual Studio Code (VSC) configuration files required to build, run, and debug the C++ project. The C++ template project is based on Cookiecutter and serves as a foundation from which new projects can be instantiated, allowing you to easily create multiple independent projects.
 
-In contrast with the **Docker App-X11-Forward-win32-CPP-Development-Template Stack** [see here](https://nicojane.github.io/APP-X11-Forward-win32-CPP-Development-Template-Stack/index.html) which provides a cross-compilation environment for MinGW, this setup offers a native Win32 environment. In this configuration, the compiler and SDK from the Windows host system are used directly and must therefore be available on the host. The advantage of this native stack is that it supports building all types of programs, whereas the cross-compilation stack is primarily suited for more traditional or desktop-oriented applications. The trade-off is that some post-configuration may be required to integrate the compiler and SDKs with Visual Studio Code. (If you have Visual Studio 2022 Professional installed in its default location, minimal adjustment should be needed.) which is a cross-compiler environment for MinGW, this is a **native Win32** environment where the compiler and SDK from the host are used and must therefore be available. The advantage over the cross-compiled stack is that all types of programs can be created, whereas the cross-compiled stack is limited to more 'traditional' and desktop-oriented applications. The disadvantage of this stack is that some post-configuration is required to integrate the compiler and SDKs with Visual Studio Code (if you have Visual Studio 2022 Professional installed in the default location, you may not need to make many adjustments)
+In contrast with the **Docker App-X11-Forward-win32-CPP-Development-Template Stack** [see here](https://nicojane.github.io/APP-X11-Forward-win32-CPP-Development-Template-Stack/index.html) which provides a cross-compilation environment for MinGW, this setup offers a native Win32 environment. In this configuration, the compiler and SDK from the Windows host system are used directly and must therefore be available on the host. The advantage of this native stack is that it supports building all types of programs, whereas the cross-compilation stack is primarily suited for more traditional or desktop-oriented applications. The trade-off is that some post-configuration may be required to integrate the compiler and SDKs with Visual Studio Code. (If you have Visual Studio 2022 Professional installed in its default location, minimal adjustment should be needed.) Unlike cross-compiler environments for MinGW, this is a native Win32 environment where the compiler and SDK from the host are used and must therefore be available. The advantage over the cross-compiled stack is that all types of programs can be created, whereas the cross-compiled stack is limited to more 'traditional' and desktop-oriented applications. The disadvantage of this stack is that some post-configuration is required to integrate the compiler and SDKs with Visual Studio Code (if you have Visual Studio 2022 Professional installed in the default location, you may not need to make many adjustments)
 
 All related verification steps are provided later in this document (see section 5.3).The image below illustrates how the components interact once setup is complete. Following the image, the Data locations table describes the folder and file structure in detail.
 
@@ -40,7 +40,7 @@ All related verification steps are provided later in this document (see section 
 
 ### ⚡ Download the Ubuntu WSL version (preparation)
 
-Finding this version can be a bit challenging, especially because we need the manual installation files (with the .Appx or .AppxBundle extensions). The Windows Store provides a direct installer, but we cannot use it because we need to control the installation name and location. Follow the steps in the background Notes below to obtain the required file: ***'install.tar.gz'***. (Note also that it is not allowed for this site to redistribute this file direct)
+Finding this version can be challenging, especially since we need manual installation files (with .Appx or .AppxBundle extensions). The Windows Store provides a direct installer, but we cannot use it because we need to control the installation name and location. Follow the steps in the background Notes below to obtain the required file: ***'install.tar.gz'***. (Note also that it is not allowed for this site to redistribute this file direct)
 
 <details class="nje-back-box">
   <a name="manual-wsl"></a>
@@ -71,7 +71,7 @@ Finding this version can be a bit challenging, especially because we need the ma
 
 ### ⚙️ Create the  WSL environment (including our packages and template files)
 
-When we have the WSL installation file(install.tar.gz) we are able to generate our WSL environment with the packages required. We do this by executing the custom script ***CreateWSL.ps1***  
+Once we have the WSL installation file (install.tar.gz), we can generate our WSL environment with the required packages. We do this by executing the custom script ***CreateWSL.ps1***  
 
 - Type in the following command:  
    <pre class="nje-cmd-one-line-sm-indent1"> <small>./CreateWSL.ps1 MyWSL </small> </pre>
@@ -132,7 +132,7 @@ This opens a new VSC Window with the container.
 
 - Use the **VSC Explorer** and select **Open Folder** to open the remote container's folder. **Ensure** that you open the correct folder so the **.vscode** directory settings are applied properly. The name of the folder used can also be found in ***Results.txt***
 
-When opening the WSL container and the project root folder in Visual Studio Code, a dedicated Visual Studio Code server will be installed within the container. This server provides a full Visual Studio Code environment with its own settings and extensions. Upon opening the folder for the first time, the system will detect any required extensions and prompt you to install them. Follow the instructions to complete the installation if prompted. If IntelliSense indicates errors in one of the project files, this is likely due to a missing extension.
+When opening the WSL container and project root folder in Visual Studio Code, a dedicated Visual Studio Code server will be installed within the container. This server provides a full Visual Studio Code environment with its own settings and extensions. Upon opening the folder for the first time, the system will detect any required extensions and prompt you to install them. Follow the instructions to complete the installation if prompted. If IntelliSense indicates errors in one of the project files, this is likely due to a missing extension.
 <br>
 
 ### Check VSC config and build files

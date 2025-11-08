@@ -9,7 +9,7 @@ RefPages:
 
 ## ℹ️ Introduction
 
-This WSL Linux (Ubuntu 24.04) Native win32 C++ distribution is designed for the development of Win32 C++ GUI applications, via the WSL container while using the host compiler and SDK. It also setup a Template project which can be instantiated with cookie cutter
+This WSL Linux (Ubuntu 24.04) native Win32 C++ distribution is designed for developing Win32 C++ GUI applications via the WSL container while using the host compiler and SDK. It also sets up a template project which can be instantiated with Cookiecutter
 
 ### Quick setup
 
