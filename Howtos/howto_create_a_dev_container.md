@@ -171,7 +171,7 @@ In the menu **'Terminal -> Run Tasks...'**, you can find the build tasks for our
 <small>RUns Release outApp</small>
 
 <span style="color: #6d757dff; font-size: 13px; font-style: italic;"> <br>
-<i><b>License</b><br>This file is part of: **WSL Native Win32 C++ Stack**  Copyright (c) 2025-2026 Nico Jan Eelhart.This repository is [MIT licensed](MIT-license.md) and free to use. For optional commercial support, customization, training, or long-term maintenance, see [COMMERCIAL.md](COMMERCIAL.md).</i>
+<i><b>License</b><br>This file is part of: **WSL Native Win32 C++ Stack**  Copyright (c) 2025-2026 Nico Jan Eelhart.This repository is [MIT licensed](../MIT-license.md) and free to use. For optional commercial support, customization, training, or long-term maintenance, see [COMMERCIAL.md](../COMMERCIAL.md).</i>
 </span>
 
 <p align="center">─── ✦ ───</p>
