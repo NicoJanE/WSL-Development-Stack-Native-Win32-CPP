@@ -5,7 +5,9 @@ RefPages:
 --- 
 <div class="nje-br3"> </div>
 
-# Win32 Native C++ Template
+# Win32 Native C++ Template <span style="color: #409EFF; font-size: 0.6em; font-style: italic;"> -  Docker Setup & Usage Guide</span>
+
+![MIT License](https://img.shields.io/badge/License-MIT-green) ![Commercial Services Available](https://img.shields.io/badge/Services-Optional-blue)
 
 ## ℹ️ Introduction
 
@@ -58,9 +60,10 @@ The results:
 
 1. You can then Open project folder in VS Code Container (File -> Open Folder) and start coding.
 
-<sub> <i>This file is part of:  **WSL Native Win32 C++ Development-Template -Stack**
-Copyright (c) 2025 Nico Jan Eelhart. This source code is licensed under the MIT License found in the  'LICENSE.md' file in the root directory of this source tree.</i>
-</sub>
+<span style="color: #6d757dff; font-size: 13px; font-style: italic;"> <br>
+<i><b>License</b><br>This file is part of: ***WSL Native Win32 C++ Template -Stack**  Copyright (c) 2025-2026 Nico Jan Eelhart.This repository is [MIT licensed](MIT-license.md) and free to use. For optional commercial support, customization, training, or long-term maintenance, see [COMMERCIAL.md](COMMERCIAL.md).</i>
+</span>
+
 
 <br>
 <p align="center">─── ✦ ───</p>
